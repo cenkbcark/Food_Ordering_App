@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCategoryCollectionViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="AH3-v5-K9z">
+                        <rect key="frame" x="20" y="14" width="98" height="93"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="1MB-Js-w2J"/>
+                            <constraint firstAttribute="height" constant="93" id="Fdk-w6-YIN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGL-YP-dAo">
+                        <rect key="frame" x="134" y="14" width="226" height="86"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-ws-U6L">
+                        <rect key="frame" x="318" y="85" width="31" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemRedColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CGL-YP-dAo" secondAttribute="bottom" constant="20" id="BZO-1h-NnB"/>
+                <constraint firstItem="CGL-YP-dAo" firstAttribute="leading" secondItem="AH3-v5-K9z" secondAttribute="trailing" constant="16" id="Fp2-vu-tPm"/>
+                <constraint firstAttribute="trailing" secondItem="F4A-ws-U6L" secondAttribute="trailing" constant="31" id="JOQ-pM-bjV"/>
+                <constraint firstAttribute="bottom" secondItem="F4A-ws-U6L" secondAttribute="bottom" constant="14" id="MUg-5X-mKh"/>
+                <constraint firstItem="F4A-ws-U6L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="85" id="Mii-Xw-7fa"/>
+                <constraint firstItem="F4A-ws-U6L" firstAttribute="leading" secondItem="AH3-v5-K9z" secondAttribute="trailing" constant="200" id="VZR-La-0BU"/>
+                <constraint firstAttribute="bottom" secondItem="AH3-v5-K9z" secondAttribute="bottom" constant="13" id="ivI-t0-OqF"/>
+                <constraint firstItem="AH3-v5-K9z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="ivf-gU-F3Y"/>
+                <constraint firstAttribute="trailing" secondItem="CGL-YP-dAo" secondAttribute="trailing" constant="20" id="lKV-OM-okU"/>
+                <constraint firstItem="AH3-v5-K9z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pdR-sv-gZ9"/>
+                <constraint firstItem="CGL-YP-dAo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="utW-hV-jrW"/>
+            </constraints>
+            <connections>
+                <outlet property="foodImageView" destination="AH3-v5-K9z" id="BpO-sd-nJr"/>
+                <outlet property="foodNameLbl" destination="CGL-YP-dAo" id="i89-kK-gAd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food" width="700" height="700"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

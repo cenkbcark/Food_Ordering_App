@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChefCollectionViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD NAME FOOD NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baI-KA-e2f">
+                        <rect key="frame" x="0.0" y="10" width="180" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="ODB-E7-wfS"/>
+                            <constraint firstAttribute="height" constant="21" id="TSl-6j-Vyv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="aqJ-hy-X27">
+                        <rect key="frame" x="8" y="36" width="164" height="208"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="164" id="g9k-XL-chk"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="baI-KA-e2f" secondAttribute="trailing" id="5ne-Oo-DQQ"/>
+                <constraint firstItem="aqJ-hy-X27" firstAttribute="top" secondItem="baI-KA-e2f" secondAttribute="bottom" constant="5" id="7A3-fb-b5u"/>
+                <constraint firstItem="baI-KA-e2f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GIk-rn-GGN"/>
+                <constraint firstItem="aqJ-hy-X27" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="QZh-XC-ulj"/>
+                <constraint firstItem="baI-KA-e2f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="kwN-36-8Tc"/>
+                <constraint firstAttribute="bottom" secondItem="aqJ-hy-X27" secondAttribute="bottom" constant="36" id="ohK-m8-2j2"/>
+                <constraint firstAttribute="trailing" secondItem="aqJ-hy-X27" secondAttribute="trailing" constant="8" id="tiN-Q4-Q3k"/>
+            </constraints>
+            <connections>
+                <outlet property="foodImageView" destination="aqJ-hy-X27" id="UaX-8U-Iad"/>
+                <outlet property="foodNameLbl" destination="baI-KA-e2f" id="Fjs-kZ-ODy"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food" width="700" height="700"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
