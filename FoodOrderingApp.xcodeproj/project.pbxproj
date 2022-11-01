@@ -41,6 +41,11 @@
 		BC4D6C70290EAB7200E8C7E6 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6C6F290EAB7200E8C7E6 /* CategoryModel.swift */; };
 		BC4D6C72290EABE800E8C7E6 /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6C71290EABE800E8C7E6 /* CategoryAPI.swift */; };
 		BC4D6C74290EABF500E8C7E6 /* CategoryRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6C73290EABF500E8C7E6 /* CategoryRequestModel.swift */; };
+		BC91DC342911AB9700452D06 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91DC322911AB9700452D06 /* CardViewController.swift */; };
+		BC91DC352911AB9700452D06 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC91DC332911AB9700452D06 /* CardViewController.xib */; };
+		BC91DC392911AC1E00452D06 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91DC372911AC1E00452D06 /* CardCollectionViewCell.swift */; };
+		BC91DC3A2911AC1E00452D06 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC91DC382911AC1E00452D06 /* CardCollectionViewCell.xib */; };
+		BC91DC3C2911B20F00452D06 /* CardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91DC3B2911B20F00452D06 /* CardCollection.swift */; };
 		BC95A818290F1A0D003EB0F0 /* ChefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95A816290F1A0D003EB0F0 /* ChefTableViewCell.swift */; };
 		BC95A819290F1A0D003EB0F0 /* ChefTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC95A817290F1A0D003EB0F0 /* ChefTableViewCell.xib */; };
 		BC95A81D290F1A25003EB0F0 /* ChefCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95A81B290F1A25003EB0F0 /* ChefCollectionViewCell.swift */; };
@@ -97,6 +102,11 @@
 		BC4D6C6F290EAB7200E8C7E6 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		BC4D6C71290EABE800E8C7E6 /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 		BC4D6C73290EABF500E8C7E6 /* CategoryRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequestModel.swift; sourceTree = "<group>"; };
+		BC91DC322911AB9700452D06 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		BC91DC332911AB9700452D06 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		BC91DC372911AC1E00452D06 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC91DC382911AC1E00452D06 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		BC91DC3B2911B20F00452D06 /* CardCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollection.swift; sourceTree = "<group>"; };
 		BC95A816290F1A0D003EB0F0 /* ChefTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefTableViewCell.swift; sourceTree = "<group>"; };
 		BC95A817290F1A0D003EB0F0 /* ChefTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefTableViewCell.xib; sourceTree = "<group>"; };
 		BC95A81B290F1A25003EB0F0 /* ChefCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -167,6 +177,7 @@
 		BC3F2AC5290EDB96006DEBA3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BC91DC312911AB8400452D06 /* CardPage */,
 				BC3F2AC6290EDB9A006DEBA3 /* HomePage */,
 				BCAF0A3E290FDDF800DF42D6 /* FoodCategoryPage */,
 				BCAF0A55291046B300DF42D6 /* DetailPage */,
@@ -355,6 +366,26 @@
 			path = ResponseModel;
 			sourceTree = "<group>";
 		};
+		BC91DC312911AB8400452D06 /* CardPage */ = {
+			isa = PBXGroup;
+			children = (
+				BC91DC322911AB9700452D06 /* CardViewController.swift */,
+				BC91DC332911AB9700452D06 /* CardViewController.xib */,
+				BC91DC3B2911B20F00452D06 /* CardCollection.swift */,
+				BC91DC362911ABDC00452D06 /* CardCell */,
+			);
+			path = CardPage;
+			sourceTree = "<group>";
+		};
+		BC91DC362911ABDC00452D06 /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC91DC372911AC1E00452D06 /* CardCollectionViewCell.swift */,
+				BC91DC382911AC1E00452D06 /* CardCollectionViewCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
 		BC95A815290F19C8003EB0F0 /* ChefSpecial */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,9 +512,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC250F21290EF96200DE7E9E /* PopularCollectionViewCell.xib in Resources */,
+				BC91DC3A2911AC1E00452D06 /* CardCollectionViewCell.xib in Resources */,
 				BC250F1C290EF80600DE7E9E /* PopularTableViewCell.xib in Resources */,
 				BCAF0A42290FDE1F00DF42D6 /* CategoryPageViewController.xib in Resources */,
 				BC3F2ACA290EDBD1006DEBA3 /* HomePageViewController.xib in Resources */,
+				BC91DC352911AB9700452D06 /* CardViewController.xib in Resources */,
 				BCAF0A4B290FE68D00DF42D6 /* FoodCategoryCollectionViewCell.xib in Resources */,
 				BC3F2AD1290EDD6C006DEBA3 /* CategoryTableViewCell.xib in Resources */,
 				BC3F2AD6290EDDC5006DEBA3 /* CategoriesCollectionViewCell.xib in Resources */,
@@ -551,6 +584,8 @@
 				BC3F2ACC290EDBF7006DEBA3 /* HomePageViewModel.swift in Sources */,
 				BC95A81D290F1A25003EB0F0 /* ChefCollectionViewCell.swift in Sources */,
 				BC4D6C72290EABE800E8C7E6 /* CategoryAPI.swift in Sources */,
+				BC91DC3C2911B20F00452D06 /* CardCollection.swift in Sources */,
+				BC91DC392911AC1E00452D06 /* CardCollectionViewCell.swift in Sources */,
 				BCAF0A5B29104AA800DF42D6 /* DetailPageViewModel.swift in Sources */,
 				BC3F2AD5290EDDC5006DEBA3 /* CategoriesCollectionViewCell.swift in Sources */,
 				BC3F2ABC290EBB33006DEBA3 /* FilteredCategoryRequestModel.swift in Sources */,
@@ -561,6 +596,7 @@
 				BCAF0A5429103BDC00DF42D6 /* CategoryPageViewModel.swift in Sources */,
 				BC95A818290F1A0D003EB0F0 /* ChefTableViewCell.swift in Sources */,
 				BC4D6C46290EA10B00E8C7E6 /* ViewController.swift in Sources */,
+				BC91DC342911AB9700452D06 /* CardViewController.swift in Sources */,
 				BC3F2AC2290ED316006DEBA3 /* MealRequestModel.swift in Sources */,
 				BC3F2AC9290EDBD1006DEBA3 /* HomePageViewController.swift in Sources */,
 				BCAF0A5F2910763800DF42D6 /* AlertManager.swift in Sources */,

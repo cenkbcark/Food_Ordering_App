@@ -19,6 +19,8 @@ final class DetailPageViewController: UIViewController {
     private var viewModel: DetailPageViewModelInput
     private var selectedCategory: FilteredList?
     private var selectedFood: [FoodResponse]?
+    //
+    var selectedMeal: FoodResponse?
     
     init(viewModel: DetailPageViewModelInput, selectedCategory: FilteredList) {
         self.viewModel = viewModel
@@ -39,6 +41,7 @@ final class DetailPageViewController: UIViewController {
     private func setFood(from meal: [FoodResponse]) {
         for item in meal {
             DispatchQueue.main.async {
+                self.selectedMeal = item
                 self.foodNameLbl.text = item.strMeal
                 self.foodDescriptionLbl.text = item.strInstructions
                 self.foodAreLbl.text = item.strArea
@@ -48,6 +51,8 @@ final class DetailPageViewController: UIViewController {
     }
 
     @IBAction func placeOrderButtonClicked(_ sender: Any) {
+        CardCollection.shared.orderedFoodList.append(selectedMeal!)
+        print("food has been added")
         ProgressHUD.showSuccess("Your order has been received..👩🏻‍🍳👨🏻‍🍳🧑🏻‍🍳")
     }
 }

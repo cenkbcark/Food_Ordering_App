@@ -56,7 +56,8 @@ final class HomePageViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: UIBarButtonItem.Style.done, target: self, action: #selector(cardButtonClicked))
     }
     @objc func cardButtonClicked() {
-        
+        let cardVC = CardViewController()
+        navigationController?.pushViewController(cardVC, animated: true)
     }
 }
 extension HomePageViewController: HomePageViewModelOutput {
