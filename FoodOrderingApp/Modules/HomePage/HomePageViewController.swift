@@ -54,6 +54,7 @@ final class HomePageViewController: UIViewController {
     
     private func setUpBarButtonItem() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: UIBarButtonItem.Style.done, target: self, action: #selector(cardButtonClicked))
+        navigationController?.navigationBar.tintColor = .red
     }
     @objc func cardButtonClicked() {
         let cardVC = CardViewController()
