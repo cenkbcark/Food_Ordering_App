@@ -15,7 +15,8 @@
 -MVVM with protocols and delegates
 -Alert Manager
 -Loading Manager
--Without storyboard. UIViewController and Cell xib.
+-Without storyboard. UIViewController and Cell xib
+-Onboarding screen.
 ```
 
 <h2>Database</h2>
