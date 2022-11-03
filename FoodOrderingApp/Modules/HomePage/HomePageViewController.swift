@@ -53,12 +53,13 @@ final class HomePageViewController: UIViewController {
     }
     
     private func setUpBarButtonItem() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: UIBarButtonItem.Style.done, target: self, action: #selector(cardButtonClicked))
-        navigationController?.navigationBar.tintColor = .red
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.fill"), style: UIBarButtonItem.Style.done, target: self, action: #selector(cardButtonClicked))
+        navigationController?.navigationBar.tintColor = .black
     }
     @objc func cardButtonClicked() {
         let cardVC = CardViewController()
         navigationController?.pushViewController(cardVC, animated: true)
+        
     }
 }
 extension HomePageViewController: HomePageViewModelOutput {

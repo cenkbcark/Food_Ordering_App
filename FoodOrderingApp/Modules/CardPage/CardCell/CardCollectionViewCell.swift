@@ -10,6 +10,7 @@ import UIKit
 final class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak private var orderImageView: UIImageView!
     @IBOutlet weak private var orderNameLbl: UILabel!
+    @IBOutlet weak private var orderDate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +21,7 @@ final class CardCollectionViewCell: UICollectionViewCell {
         guard let image = meal.strMealThumb else { return }
         orderImageView.sd_setImage(with: URL(string: image))
         orderImageView.layer.cornerRadius = 15
+        orderDate.text = meal.strCategory
     }
     
     func configureCell(from cell: CardCollectionViewCell){

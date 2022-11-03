@@ -41,6 +41,11 @@
 		BC4D6C70290EAB7200E8C7E6 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6C6F290EAB7200E8C7E6 /* CategoryModel.swift */; };
 		BC4D6C72290EABE800E8C7E6 /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6C71290EABE800E8C7E6 /* CategoryAPI.swift */; };
 		BC4D6C74290EABF500E8C7E6 /* CategoryRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6C73290EABF500E8C7E6 /* CategoryRequestModel.swift */; };
+		BC8D1F342913067200124057 /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D1F332913067200124057 /* OnboardingSlides.swift */; };
+		BC8D1F372913068F00124057 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D1F352913068F00124057 /* OnBoardingViewController.swift */; };
+		BC8D1F382913068F00124057 /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8D1F362913068F00124057 /* OnBoardingViewController.xib */; };
+		BC8D1F3C29130BC000124057 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D1F3A29130BC000124057 /* OnBoardingCollectionViewCell.swift */; };
+		BC8D1F3D29130BC000124057 /* OnBoardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8D1F3B29130BC000124057 /* OnBoardingCollectionViewCell.xib */; };
 		BC91DC342911AB9700452D06 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91DC322911AB9700452D06 /* CardViewController.swift */; };
 		BC91DC352911AB9700452D06 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC91DC332911AB9700452D06 /* CardViewController.xib */; };
 		BC91DC392911AC1E00452D06 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91DC372911AC1E00452D06 /* CardCollectionViewCell.swift */; };
@@ -102,6 +107,11 @@
 		BC4D6C6F290EAB7200E8C7E6 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		BC4D6C71290EABE800E8C7E6 /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 		BC4D6C73290EABF500E8C7E6 /* CategoryRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequestModel.swift; sourceTree = "<group>"; };
+		BC8D1F332913067200124057 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
+		BC8D1F352913068F00124057 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		BC8D1F362913068F00124057 /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		BC8D1F3A29130BC000124057 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC8D1F3B29130BC000124057 /* OnBoardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		BC91DC322911AB9700452D06 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		BC91DC332911AB9700452D06 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		BC91DC372911AC1E00452D06 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +187,7 @@
 		BC3F2AC5290EDB96006DEBA3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D1F322913065F00124057 /* OnBoardingPage */,
 				BC91DC312911AB8400452D06 /* CardPage */,
 				BC3F2AC6290EDB9A006DEBA3 /* HomePage */,
 				BCAF0A3E290FDDF800DF42D6 /* FoodCategoryPage */,
@@ -366,6 +377,26 @@
 			path = ResponseModel;
 			sourceTree = "<group>";
 		};
+		BC8D1F322913065F00124057 /* OnBoardingPage */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D1F332913067200124057 /* OnboardingSlides.swift */,
+				BC8D1F352913068F00124057 /* OnBoardingViewController.swift */,
+				BC8D1F362913068F00124057 /* OnBoardingViewController.xib */,
+				BC8D1F392913069900124057 /* OnboardingCell */,
+			);
+			path = OnBoardingPage;
+			sourceTree = "<group>";
+		};
+		BC8D1F392913069900124057 /* OnboardingCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D1F3A29130BC000124057 /* OnBoardingCollectionViewCell.swift */,
+				BC8D1F3B29130BC000124057 /* OnBoardingCollectionViewCell.xib */,
+			);
+			path = OnboardingCell;
+			sourceTree = "<group>";
+		};
 		BC91DC312911AB8400452D06 /* CardPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +544,7 @@
 			files = (
 				BC250F21290EF96200DE7E9E /* PopularCollectionViewCell.xib in Resources */,
 				BC91DC3A2911AC1E00452D06 /* CardCollectionViewCell.xib in Resources */,
+				BC8D1F3D29130BC000124057 /* OnBoardingCollectionViewCell.xib in Resources */,
 				BC250F1C290EF80600DE7E9E /* PopularTableViewCell.xib in Resources */,
 				BCAF0A42290FDE1F00DF42D6 /* CategoryPageViewController.xib in Resources */,
 				BC3F2ACA290EDBD1006DEBA3 /* HomePageViewController.xib in Resources */,
@@ -526,6 +558,7 @@
 				BC95A81E290F1A25003EB0F0 /* ChefCollectionViewCell.xib in Resources */,
 				BCAF0A59291046E200DF42D6 /* DetailPageViewController.xib in Resources */,
 				BC4D6C49290EA10B00E8C7E6 /* Main.storyboard in Resources */,
+				BC8D1F382913068F00124057 /* OnBoardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8D1F372913068F00124057 /* OnBoardingViewController.swift in Sources */,
 				BCAF0A4A290FE68D00DF42D6 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				BC3F2ABA290EBAFC006DEBA3 /* FilteredCategoryModel.swift in Sources */,
 				BC3F2AC4290ED3B4006DEBA3 /* MealAPI.swift in Sources */,
@@ -598,6 +632,7 @@
 				BC4D6C46290EA10B00E8C7E6 /* ViewController.swift in Sources */,
 				BC91DC342911AB9700452D06 /* CardViewController.swift in Sources */,
 				BC3F2AC2290ED316006DEBA3 /* MealRequestModel.swift in Sources */,
+				BC8D1F3C29130BC000124057 /* OnBoardingCollectionViewCell.swift in Sources */,
 				BC3F2AC9290EDBD1006DEBA3 /* HomePageViewController.swift in Sources */,
 				BCAF0A5F2910763800DF42D6 /* AlertManager.swift in Sources */,
 				BC4D6C6D290EA93300E8C7E6 /* ApiError.swift in Sources */,
@@ -610,6 +645,7 @@
 				BC3F2AD0290EDD6C006DEBA3 /* CategoryTableViewCell.swift in Sources */,
 				BCAF0A41290FDE1F00DF42D6 /* CategoryPageViewController.swift in Sources */,
 				BC250F1B290EF80600DE7E9E /* PopularTableViewCell.swift in Sources */,
+				BC8D1F342913067200124057 /* OnboardingSlides.swift in Sources */,
 				BC4D6C64290EA57200E8C7E6 /* RequestModel.swift in Sources */,
 				BCAF0A632910770300DF42D6 /* UIView+Extension.swift in Sources */,
 				BCAF0A612910766000DF42D6 /* LoadingManager.swift in Sources */,

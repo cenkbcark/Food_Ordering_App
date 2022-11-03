@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnBoardingCollectionViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="529"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="529"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-K9-tNX">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="356"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="356" id="J0m-nu-iNZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUe-2a-ovL">
+                        <rect key="frame" x="0.0" y="364" width="410" height="30"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoF-PN-3u6">
+                        <rect key="frame" x="20" y="411" width="370" height="38"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="QiM-xe-KXY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="MX3-K9-tNX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2N8-Mq-Gpp"/>
+                <constraint firstAttribute="trailing" secondItem="yUe-2a-ovL" secondAttribute="trailing" symbolic="YES" id="E4F-0a-lpU"/>
+                <constraint firstItem="yUe-2a-ovL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" symbolic="YES" id="I3m-yO-Xtb"/>
+                <constraint firstItem="yUe-2a-ovL" firstAttribute="top" secondItem="MX3-K9-tNX" secondAttribute="bottom" constant="8" symbolic="YES" id="Jwc-Eq-c7I"/>
+                <constraint firstAttribute="trailing" secondItem="MX3-K9-tNX" secondAttribute="trailing" constant="-3" id="P8I-TV-cFs"/>
+                <constraint firstItem="qoF-PN-3u6" firstAttribute="top" secondItem="yUe-2a-ovL" secondAttribute="bottom" constant="17" id="Xyi-4r-jne"/>
+                <constraint firstItem="MX3-K9-tNX" firstAttribute="leading" secondItem="yUe-2a-ovL" secondAttribute="leading" id="g8X-Ax-fb6"/>
+                <constraint firstItem="qoF-PN-3u6" firstAttribute="centerX" secondItem="yUe-2a-ovL" secondAttribute="centerX" id="lTS-f2-ypP"/>
+                <constraint firstItem="qoF-PN-3u6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="viV-uE-K48"/>
+            </constraints>
+            <connections>
+                <outlet property="onboardingImage" destination="MX3-K9-tNX" id="KFr-bQ-d3T"/>
+                <outlet property="onboardingSubtitle" destination="qoF-PN-3u6" id="JsV-fe-ZSN"/>
+                <outlet property="onboardingTitle" destination="yUe-2a-ovL" id="2sV-5f-TVq"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="150"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="slide1" width="512" height="512"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

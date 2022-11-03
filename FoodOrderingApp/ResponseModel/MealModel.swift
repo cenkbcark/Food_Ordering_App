@@ -12,7 +12,7 @@ struct MealResponse: Codable {
 }
 struct FoodResponse : Codable {
     let strMeal : String?
-    let strCategory : String?
+    var strCategory : String?
     let strArea : String?
     let strInstructions : String?
     let strMealThumb : String?

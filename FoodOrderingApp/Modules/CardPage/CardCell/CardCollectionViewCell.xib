@@ -44,20 +44,31 @@
                         <color key="textColor" systemColor="systemGreenColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qby-NF-xqH">
+                        <rect key="frame" x="137" y="84" width="173" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="qby-NF-xqH" firstAttribute="firstBaseline" secondItem="GzJ-lP-ebR" secondAttribute="baseline" id="2cg-Jb-zo7"/>
+                <constraint firstItem="qby-NF-xqH" firstAttribute="bottom" secondItem="GzJ-lP-ebR" secondAttribute="bottom" id="2dR-3A-p6k"/>
                 <constraint firstAttribute="trailing" secondItem="ptQ-c7-bLC" secondAttribute="trailing" constant="20" id="7fo-5V-rcR"/>
                 <constraint firstItem="ptQ-c7-bLC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="AI8-fb-L5q"/>
                 <constraint firstAttribute="bottom" secondItem="IUT-Bi-hod" secondAttribute="bottom" constant="13" id="M2B-UQ-bu1"/>
                 <constraint firstAttribute="bottom" secondItem="GzJ-lP-ebR" secondAttribute="bottom" constant="20" id="bUJ-5g-QUS"/>
+                <constraint firstItem="qby-NF-xqH" firstAttribute="leading" secondItem="IUT-Bi-hod" secondAttribute="trailing" constant="19" id="gJa-2j-UR5"/>
                 <constraint firstAttribute="trailing" secondItem="GzJ-lP-ebR" secondAttribute="trailing" constant="31" id="jVf-6D-pGz"/>
                 <constraint firstItem="IUT-Bi-hod" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="lF1-z2-suG"/>
+                <constraint firstItem="GzJ-lP-ebR" firstAttribute="leading" secondItem="qby-NF-xqH" secondAttribute="trailing" constant="8" symbolic="YES" id="oUq-rb-aSn"/>
                 <constraint firstItem="IUT-Bi-hod" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="qvc-Zr-3wj"/>
             </constraints>
             <connections>
+                <outlet property="orderDate" destination="qby-NF-xqH" id="NUh-vU-9NV"/>
                 <outlet property="orderImageView" destination="IUT-Bi-hod" id="y8m-5V-3fx"/>
                 <outlet property="orderNameLbl" destination="ptQ-c7-bLC" id="2lD-1e-DL0"/>
             </connections>
@@ -68,6 +79,9 @@
         <image name="food" width="700" height="700"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

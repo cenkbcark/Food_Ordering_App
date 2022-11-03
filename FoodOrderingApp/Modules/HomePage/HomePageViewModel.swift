@@ -37,8 +37,6 @@ final class HomePageViewModel: HomePageViewModelInput {
     }
     func viewDidLoad() {
         retrieveCategoryList()
-        retrieveFilteredList()
-        retrieveChefList()
     }
     func retrieveCategoryList() {
         LoadingManager.shared.show()
@@ -49,6 +47,7 @@ final class HomePageViewModel: HomePageViewModelInput {
             case .success(let categoryList):
                 self.categoryList.append(contentsOf: categoryList.categories)
                 self.output?.home(_home: self, categoryListDidLoad: categoryList.categories)
+                self.retrieveFilteredList()
             case .failure(let error):
                 AlertManager.shared.showAlert(with: error)
             }
@@ -63,6 +62,7 @@ final class HomePageViewModel: HomePageViewModelInput {
             case .success(let filteredList):
                 self.filteredList.append(contentsOf: filteredList.meals)
                 self.output?.home(_home: self, filteredCategoryListDidLoad: filteredList.meals)
+                self.retrieveChefList()
             case .failure(let error):
                 AlertManager.shared.showAlert(with: error)
             }

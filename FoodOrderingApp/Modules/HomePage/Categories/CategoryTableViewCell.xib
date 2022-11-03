@@ -29,11 +29,11 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7q-yx-eXk">
-                        <rect key="frame" x="16" y="3" width="288" height="29"/>
+                        <rect key="frame" x="16" y="3" width="288" height="34"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="288" id="Doz-VR-bJP"/>
-                            <constraint firstAttribute="height" constant="29" id="zdE-jq-j8K"/>
+                            <constraint firstAttribute="height" constant="34" id="zdE-jq-j8K"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                         <nil key="textColor"/>
@@ -43,7 +43,7 @@
                 <constraints>
                     <constraint firstItem="i7q-yx-eXk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="ABd-ze-YhW"/>
                     <constraint firstAttribute="bottom" secondItem="M2X-ef-5D2" secondAttribute="bottom" id="Hoy-Mz-glG"/>
-                    <constraint firstItem="M2X-ef-5D2" firstAttribute="top" secondItem="i7q-yx-eXk" secondAttribute="bottom" constant="8" symbolic="YES" id="WyL-fw-Lbj"/>
+                    <constraint firstItem="M2X-ef-5D2" firstAttribute="top" secondItem="i7q-yx-eXk" secondAttribute="bottom" constant="3" id="WyL-fw-Lbj"/>
                     <constraint firstItem="M2X-ef-5D2" firstAttribute="centerX" secondItem="i7q-yx-eXk" secondAttribute="centerX" id="mWC-rU-prQ"/>
                     <constraint firstItem="M2X-ef-5D2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nKZ-Ud-7Qz"/>
                     <constraint firstAttribute="trailing" secondItem="i7q-yx-eXk" secondAttribute="trailing" constant="16" id="uar-9S-UxU"/>

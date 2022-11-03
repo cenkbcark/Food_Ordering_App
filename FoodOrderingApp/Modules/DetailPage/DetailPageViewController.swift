@@ -10,17 +10,16 @@ import ProgressHUD
 
 final class DetailPageViewController: UIViewController {
     
-    @IBOutlet weak var foodImageView: UIImageView!
-    @IBOutlet weak var foodDescriptionLbl: UILabel!
-    @IBOutlet weak var foodNameLbl: UILabel!
-    @IBOutlet weak var foodAreLbl: UILabel!
-    @IBOutlet weak var buttonStyle: UIButton!
+    @IBOutlet weak private var foodImageView: UIImageView!
+    @IBOutlet weak private var foodDescriptionLbl: UILabel!
+    @IBOutlet weak private var foodNameLbl: UILabel!
+    @IBOutlet weak private var foodAreLbl: UILabel!
+    @IBOutlet weak private var buttonStyle: UIButton!
     
     private var viewModel: DetailPageViewModelInput
     private var selectedCategory: FilteredList?
     private var selectedFood: [FoodResponse]?
-    //
-    var selectedMeal: FoodResponse?
+    private var selectedMeal : FoodResponse?
     
     init(viewModel: DetailPageViewModelInput, selectedCategory: FilteredList) {
         self.viewModel = viewModel
@@ -51,11 +50,16 @@ final class DetailPageViewController: UIViewController {
     }
 
     @IBAction func placeOrderButtonClicked(_ sender: Any) {
-        CardCollection.shared.orderedFoodList.append(selectedMeal!)
-        print("food has been added")
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        selectedMeal?.strCategory = dateFormatter.string(from: date)
+        guard let meal = selectedMeal else { return }
+        CardCollection.shared.orderedFoodList.append(meal)
         ProgressHUD.showSuccess("Your order has been received..👩🏻‍🍳👨🏻‍🍳🧑🏻‍🍳")
     }
 }
+
 extension DetailPageViewController: DetailPageViewModelOutput {
     func home(_home viewModel: DetailPageViewModelInput, selectedFoodDidLoad: MealResponse) {
         self.selectedFood = selectedFoodDidLoad.meals

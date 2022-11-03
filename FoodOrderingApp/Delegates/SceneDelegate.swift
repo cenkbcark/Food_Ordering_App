@@ -18,17 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         //
-        let networkManager = NetworkManager(session: .shared)
-        let categoryApi = CategoryAPI(networkManager: networkManager)
-        //
-        let filteredNetworkManager = NetworkManager(session: .shared)
-        let filteredCategoryApi = FilteredCategoryAPI(networkManager: filteredNetworkManager)
-        //
-        let homeViewModel = HomePageViewModel(categoryAPI: categoryApi, filteredCategoryAPI: filteredCategoryApi)
-        let homePageViewController = HomePageViewController(viewModel: homeViewModel)
-        //
-        let navigationController = UINavigationController(rootViewController: homePageViewController)
-        window?.rootViewController = navigationController
+        let onBoardingVC = OnBoardingViewController()
+        window?.rootViewController = onBoardingVC
         window?.makeKeyAndVisible()
         
     }
